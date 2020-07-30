@@ -8,7 +8,7 @@ html {
 
 body {
     margin: 0;
-    /* background-color: #DCDCDC; */
+    background-color: #DCDCDC;
 }
 
 h1 {
@@ -196,6 +196,10 @@ button {
 
     .none-l {
         display: none;
+    }
+    
+    #FundK {
+        height: 460px;
     }
 }
 
