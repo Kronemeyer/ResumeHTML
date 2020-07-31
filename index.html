@@ -12,7 +12,21 @@
     <!-- Introduction  -->
     <div class="row head">
         <div class="head-l-5 head-m-5 head-s-12"><img src="Headshot.jpg" alt="Headshot"></div>
-        <div class="head-l-6 head-m-6 head-s-12"><h1>Benjamin<br>Kronemeyer</h1></div>
+        <div class="head-l-7 head-m-7 head-s-12">
+            <h1>Benjamin<br>Kronemeyer</h1>
+            <br>
+            <span class="english">
+                This is a simple HTML version of my resume<br>
+                It includes responsive web design for large, medium, and small screens,
+                CSS, and JavaScript to allow an email prompt and changing between English and German. 
+            </span>
+            <span class="deutsch">
+                Dies ist eine einfache HTML-Version meines Lebenslaufs<br>
+                Es enthält reaktionsschnelles Webdesign für große, mittlere und kleine Medienbildschirme 
+                und JavaScript, um eine E-Mail-Eingabeaufforderung zu ermöglichen und zwischen Deutsch 
+                und Englisch zu wechseln
+            </span>
+        </div>
         <div class="topright">
             <button id="de" class ="tabinactive" onclick="openl('deOL')">Deutsch</button>
             <button autofocus id="en" class="tabactive" onclick="openl('enOL')">English</button>
@@ -224,6 +238,8 @@
         </div>
     </div>
 
-    <footer style="padding-bottom: 16.9mm; background-color: #9afa89;"></footer>
+    <footer class="footer">
+        <input type="button" value="Hire Me!" onclick="hireme()"></input>
+    </footer>
 </body>
 </html>

@@ -36,3 +36,10 @@ function openl(lang) {
     document.getElementById(prev).style.width = '0%';
     document.getElementById(lang).style.width = '100%';
 }
+
+function hireme() {
+    var email, subject, body;
+    email = "Benjamink1409@gmail.com";
+    subject = "Benjamin, please join my team of Avengers!";
+    document.location = "mailto:"+email+"?subject="+subject;    
+}
