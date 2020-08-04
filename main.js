@@ -40,6 +40,6 @@ function openl(lang) {
 function hireme() {
     var email, subject, body;
     email = "Benjamink1409@gmail.com";
-    subject = "Benjamin, please join my team of Avengers!";
+    subject = "Benjamin, please join our team of Avengers!";
     document.location = "mailto:"+email+"?subject="+subject;    
 }
