@@ -37,9 +37,24 @@ function openl(lang) {
     document.getElementById(lang).style.width = '100%';
 }
 
-function hireme() {
+function email(option) {
     var email, subject, body;
     email = "Benjamink1409@gmail.com";
-    subject = "Benjamin, please join my team of Avengers!";
-    document.location = "mailto:"+email+"?subject="+subject;    
+    switch (option) {
+        case 'en':
+            subject = "Benjamin, please allow access to your Pickup Sports repository";
+            body = "Hello Benjamin,%0D%0A%0D%0APlease add me to your repository access list.%0D%0AMy Github username is: %0D%0A%0D%0AThank you!";
+            break;
+        case 'de':
+            subject = "Benjamin, bitte erlauben Sie den Zugriff auf Ihr Pickup Sports-Repository";
+            body = "Hallo Benjamin, %0D%0A%0D%0Abitte füge mich zu deiner Repository-Zugriffsliste hinzu.%0D%0AMein Github-Benutzername lautet:%0D%0A%0D%0ADanke!"
+            break;
+        case 'hire':
+            subject = "Benjamin, please join our team of Avengers!";
+            body = "";
+            break;
+        default:
+            break;
+    }
+    document.location = "mailto:"+email+"?subject="+subject+"&body="+body;  
 }
